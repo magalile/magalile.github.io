@@ -27,6 +27,11 @@ html {
     scroll-behavior: smooth;
 }
 
+#ecoindex-badge {
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
+
 /* ----------- Header ----------- */
 
 header {
