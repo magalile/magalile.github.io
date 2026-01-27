@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OneDoc | Portfolio Magali Lefevre - UI/UX Designer | Product Designer | Freelance Annecy Genève</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/cbr5gcs.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <a href="index.html" class="logo-section">
+                <img class="logo" src="images/magalile-logo.svg" alt="Logo ML" />
+                <div class="logo-text">
+                    <p class="name"><strong>magali</strong> lefevre</p>
+                    <p class="job">UX / UI / Product Designer <span class="tag">freelance</span></p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#projets">projets</a></li>
+                    <li><a href="index.html#about">à propos</a></li>
+                    <li><a href="index.html#contact">contact</a></li>
+                    <li><a href="mailto:ml.magali.lefevre@gmail.com">@</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/magali-lefevre-370b6a58">in</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <a href="index.html" class="back-link">← retour sur la page d'accueil</a>
+                <h2>
+                    Refonte de l’interface web des médecins d'une <strong>plateforme de rendez-vous médicaux</strong>
+                </h2>
+                <p>
+                    La refonte a pour but de simplifier l'ergonomie de l'interface medecin, faciliter la maintenance et
+                    rafraichir l'apparence graphique.
+                </p>
+            </div>
+
+            <div class="hero-role">
+                <span class="label">Rôle :</span>
+                <h3 class="role">Product Designer</h3>
+                <span class="role-tag">tests ergonomique</span>
+                <span class="role-tag">refonte ux</span>
+                <span class="role-tag">styleguide ux</span>
+                <span class="role-tag">supervision ui</span>
+            </div>
+        </section>
+
+        <section class="app-preview">
+            <img src="images/projects/project-c-01.jpg" alt="Interface de l'application" />
+            <span class="caption">agenda medecin</span>
+        </section>
+
+        <section class="project-info">
+            <div class="info-left">
+                <div class="info-item">
+                    <h4>Client</h4>
+                    <p>OneDoc</p>
+
+                    <h4>Type de produit</h4>
+                    <p>Web App</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>Particularités de la mission :</h4>
+                    <p>
+                        Backend non modifiable, nécessité de s’adapter à des habitudes établies, nombreux cas d’usage
+                        spécifiques et accès limité aux utilisateurs finaux.
+                    </p>
+                    <h4>Mode d'intervention :</h4>
+                    <p>2 jours par semaine pendant 1 an, via EMPICA.</p>
+                </div>
+            </div>
+
+            <div class="info-right">
+                <div class="content-section">
+                    <h2>étude de case en cours de rédaction</h2>
+                    <p>merci pour votre patience ;)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-preview">
+            <img src="images/projects/project-c-02.jpg" alt="Interface de l'application" />
+            <span class="caption">wireframes fonctionnalités</span>
+        </section>
+
+        <section class="back-projets">
+            <a href="index.html#projets" class="back-link">← retour à la liste des projets</a>
+        </section>
+
+        <footer class="footer-b">
+            <img class="logo" src="images/magalile-logo.svg" alt="Logo ML" />
+            <p class="name">magali lefevre</p>
+            <p class="job">UX / UI / Product Designer</p>
+            <a class="contact-info" href="mailto:ml.magali.lefevre@gmail.com"> ml.magali.lefevre@gmail.com</a>
+            <span class="contact-info">+33 6 43 32 82 46</span>
+            <span class="contact-info">Annecy / Genève / Remote</span>
+        </footer>
+        <button id="scrollTopBtn" aria-label="Remonter en haut">↑</button>
+    </body>
+</html>
+
+<script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            scrollTopBtn.classList.add("show");
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
