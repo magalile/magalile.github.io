@@ -684,14 +684,15 @@ footer.footer-b .job {
 .app-preview img:last-child {
     margin-bottom: 0;
 }
-.caption {
+
+.app-preview .caption {
     font-size: 1rem;
     color: #aeaeae;
     margin-top: -1.25rem;
     display: block;
     font-style: italic;
 }
-.caption-next {
+.app-preview .caption-next {
     margin-bottom: 1.5rem;
 }
 /* Project Info */
